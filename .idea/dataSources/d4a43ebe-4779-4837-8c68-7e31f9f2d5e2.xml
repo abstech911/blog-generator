@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@cluster0.frnmj0x.mongodb.net">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.41">
+    <root id="1">
+      <ServerVersion>6.0.11</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="blog"/>
+    <schema id="4" parent="1" name="local"/>
+    <table id="5" parent="3" name="posts"/>
+    <table id="6" parent="3" name="users"/>
+    <column id="7" parent="6" name="_id">
+      <DataType>ObjectId|12s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="8" parent="6" name="auth0Id">
+      <DataType>String|12s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="9" parent="6" name="avaliableTokens">
+      <DataType>Int32|4s</DataType>
+      <Position>3</Position>
+    </column>
+  </database-model>
+</dataSource>
